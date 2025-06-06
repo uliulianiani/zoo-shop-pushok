@@ -1,0 +1,341 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: #91DCDB;
+  border-bottom: 2px solid #39aab2;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+}
+
+.categories {
+  text-align: center;
+  padding: 2rem 3rem;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #91DCDB;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+.category img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.category span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.promotions {
+  padding: 2rem 1rem;
+  background: #d1feff;
+}
+
+.promo-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 200px;
+  text-align: center;
+}
+
+.discount {
+  color: rgb(255, 81, 191);
+  font-weight: bold;
+}
+
+
+.subscribe {
+  background: #91DCDB;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  padding-left: 65px;
+}
+
+.ham-img {
+  position: absolute;
+  left: 0;
+  transform: translateY(-28%);
+  width: 270px;
+  height: 200px;
+}
+
+.input-group {
+  position: relative;
+  padding-right: 65px;
+}
+
+.cat-img {
+  position: absolute;
+  right: 0;
+  transform: translateY(-30%);
+  width: 403px;
+  height: 260px;
+}
+
+.subscribe input {
+  flex-grow: 1;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  background: rgb(255, 81, 191);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.news {
+  padding: 2rem 1rem;
+}
+
+.news-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.news-header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.view-all {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-card {
+  background: #d1feff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.news-card h3 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.news-date {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.news {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news:nth-child(n+5) {
+  grid-column: 3 / 5;
+}
+
+
+.brands {
+  background: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.brand-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.footer h3::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #ff69b4;
+  margin-top: 0.5rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ff69b4;
+}
+
+.contact-info {
+  margin-top: 1rem;
+}
+
+.socials {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.divider {
+  border-top: 1px solid #444;
+  margin: 1.5rem 0;
+}
+
+/* Glide.js адаптация под <li> */
+.glide__slides {
+  display: flex;
+  gap: 20px;               /* Отступ между карточками — можешь изменить */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.glide__slide {
+  flex-shrink: 0;
+  width: 220px;            /* Или ширина, которая подходит под твою карточку */
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .footer-col {
+    min-width: 150px;
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-col {
+    flex-basis: 100%;
+  }
+}
